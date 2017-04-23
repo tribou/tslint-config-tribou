@@ -46,7 +46,8 @@
     "eslint-plugin-standard": "^2.0.1"
   },
   "peerDependencies": {
-    "tslint": "^5.1.0"
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
   },
   "dependencies": {
     "tslint-eslint-rules": "^4.0.0",

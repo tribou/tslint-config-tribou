@@ -3,6 +3,8 @@ const Path = require('path')
 
 module.exports = {
 
+  defaultSeverity: 'error',
+
   extends: [
     'tslint:recommended',
   ],
@@ -36,6 +38,10 @@ module.exports = {
       'as-needed',
     ],
     'prefer-array-literal': true,
+    'interface-name': [
+      true,
+      'always-prefix',
+    ],
     quotemark: [
       true,
       'single',
@@ -57,7 +63,7 @@ module.exports = {
       'parameters',
     ],
     'ter-prefer-arrow-callback': [true],
-    'arrow-body-style': [
+    'ter-arrow-body-style': [
       true,
       'as-needed',
       {

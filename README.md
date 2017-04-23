@@ -13,10 +13,11 @@ git-awareness, vim-usability, and React and ES6 best practices.
 ```bash
 npm install --save-dev \
     tslint-config-tribou \
-    tslint@^5.1.0
+    tslint@^5.1.0 \
+    typescript@^2.2.2
 ```
 
-Then add the following to your `.eslintrc`:
+Then add the following to your `tslint.json`:
 
 ```json
 {
@@ -24,4 +25,10 @@ Then add the following to your `.eslintrc`:
     "tslint-config-tribou"
   ]
 }
+```
+
+Run the linter with a command like the following:
+
+```
+tslint --type-check --project tsconfig.json -c tslint.json '*(config|server|src)/**/*.ts?'
 ```
