@@ -1,0 +1,61 @@
+{
+  "name": "tslint-config-tribou",
+  "version": "0.0.1",
+  "description": "Start with JS Standard Style but push towards better readability, git-awareness, vim-usability, and React and ES6 best practices",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.4.x <7",
+    "npm": ">=4 <5",
+    "yarn": "0.23.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tribou/tslint-config-tribou.git"
+  },
+  "keywords": [
+    "config",
+    "tslint",
+    "tribou",
+    "typescript",
+    "style",
+    "styleguide",
+    "styling",
+    "lint",
+    "linting",
+    "readability"
+  ],
+  "author": "tribou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tribou/tslint-config-tribou/issues"
+  },
+  "homepage": "https://github.com/tribou/tslint-config-tribou#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-tribou": "^3.0.0",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-flowtype": "^2.25.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.7.1",
+    "eslint-plugin-standard": "^2.0.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.1.0"
+  },
+  "dependencies": {
+    "tslint-eslint-rules": "^4.0.0",
+    "tslint-microsoft-contrib": "^4.0.1",
+    "vrsource-tslint-rules": "^5.1.0"
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore index.js",
+    "yarn": "npm run --silent yarn-bin -- install --ignore-scripts --offline",
+    "yarn-bin": "node bin/yarn-${npm_package_engines_yarn}.js"
+  }
+}
