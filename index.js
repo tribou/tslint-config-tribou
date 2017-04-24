@@ -37,6 +37,16 @@ module.exports = {
       true,
       'as-needed',
     ],
+    'prefer-literal': [
+      true,
+      'object',
+      'function',
+      'array',
+    ],
+    curly: [
+      true,
+      'ignore-same-line',
+    ],
     'prefer-array-literal': true,
     'interface-name': [
       true,
@@ -57,6 +67,7 @@ module.exports = {
       },
     ],
     'no-param-reassign': true,
+    'no-jasmine-focus': true,
     align: [
       true,
       'arguments',
@@ -153,6 +164,11 @@ module.exports = {
         singleline: 'never',
       },
     ],
+    'multiline-arrow': [
+      true,
+      'require-parens',
+      'require-block',
+    ],
     semicolon: [
       false,
       'always',
@@ -167,7 +183,9 @@ module.exports = {
     ],
     'variable-name': [
       true,
+      'ban-keywords',
       'check-format',
+      'allow-pascal-case',
     ],
     'no-var-self': true,
     'import-name': true,
